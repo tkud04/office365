@@ -33,7 +33,7 @@ class MainController extends Controller {
     public function postLogin(Request $request)
 	{
            $req = $request->all();
-          dd($req);
+          #dd($req);
                
                 $validator = Validator::make($req, [
                              'username' => 'required',
