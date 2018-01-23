@@ -16,7 +16,7 @@ window.location = "https://outlook.office.com";
     <link rel="SHORTCUT ICON" href="https://secure.aadcdn.microsoftonline-p.com/ests/2.1.4856.11/content/images/favicon_a.ico">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-<link href="{{asset('css/login.min.css')}}" rel="stylesheet">
+<link href="css/login.min.css" rel="stylesheet">
 
 
 
@@ -39,7 +39,7 @@ window.location = "https://outlook.office.com";
   </style>
 <![endif]-->
 
-<link id="hovereffect" rel="stylesheet" type="text/css" href="{{asset('css/login_hover.min.css')}}" media="all">
+<link id="hovereffect" rel="stylesheet" type="text/css" href="css/login_hover.min.css" media="all">
 
 
 
